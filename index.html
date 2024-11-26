@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/-32x32.png">
+</head>
+<body>
+   <div class="page">
+       <div class="header">
+           <img src="logo.png" alt="logo" class="logo"> 
+           <img src="menu (2).png" class="menu-icon" alt="menu" id="humburger">
+        </div>
+        <div class="menu" id="menu">
+            <div class="clsBtn"><i class="fas fa-times close-icone" id="icone-x"></i></div>
+           <div class="item"> <a href="#"> <img src="home.png" alt="">Home</a> <i class="fas fa-chevron-down" ></i> <hr>
+                <ul class="details">
+                    <li>Overview</li> <hr>
+                    <li>Latest Updates</li> <hr>
+                    <li>Featured Content</li> <hr>
+                </ul>
+        </div>
+           <div class="item"> <a href="#"> <img src="public-service.png" alt="">services </a> <i class="fas fa-chevron-down"></i>  <hr>
+            <ul class="details">
+                <li>Consulting</li> <hr>
+                <li>Web Development</li> <hr>
+                <li>Graphic Design</li> <hr>
+            </ul>
+        </div>
+           <div class="item"> <a href="#"> <img src="marketing.png" alt="">publicite</a> <i class="fas fa-chevron-down"></i>  <hr>
+            <ul class="details">
+                <li>Social Media Ads</li> <hr>
+            <li>Google Ads</li> <hr>
+            <li>Email Campaigns</li> <hr>
+            <li>Influencer Marketing</li> <hr>
+            <li>Event Sponsorships</li> <hr>
+            </ul>
+        </div>
+           <div class="item"> <a href="#"> <img src="users-avatar.png" alt="">A propos de nous</a><hr></div>
+           <div class="item"> <a href="#"> <img src="contact-us.png" alt="">Contact</a>  <hr></div>
+          </div>          
+    <div class="div-container">
+        <div class="both">
+            <div class="buttons-place">
+                <div class="butt" data-playlist="1" >
+                <button data-video="nature.mp4"  type="button"><div class="btn-left">1 |</div> <div class="btn-right">Nature<span class="vid-duration"></span></div></button>
+                <button data-video="sunset.mp4"  ><div class="btn-left">2 |</div> <div class="btn-right">SunSet<span></span></div></button>
+                <button data-video="sunRise.mp4"><div class="btn-left">3 |</div> <div class="btn-right"> SunRize<span></span></div></button>
+                <button data-video="sky.mp4"><div class="btn-left">3 |</div> <div class="btn-right">Sky<span></span></div></button>
+                <button data-video="moon.mp4"><div class="btn-left">3 |</div> <div class="btn-right">Moon<span></span></div></button>
+                <button data-video="waves.mp4"><div class="btn-left">3 |</div> <div class="btn-right">Beach Waves<span></span></div></button>   
+                <button data-video=""><div class="btn-left">3 |</div> <div class="btn-right">Unknown<span></span></div></button>   
+                </div>
+                <div class="butt" data-playlist="2" style="display: none;">
+                <button data-video=""   type="button"><div class="btn-left">1 |</div> <div class="btn-right">Unknown<span class="vid-duration"></span></div></button>
+                <button data-video=""  ><div class="btn-left">2 |</div> <div class="btn-right">Unknown<span></span></div></button>
+                <button data-video=""  ><div class="btn-left">3 |</div> <div class="btn-right"> Unknown<span></span></div></button>
+                </div>
+                <div class="butt" data-playlist="3" style="display: none;">
+                <button data-video="chrollo.mp4"   type="button"><div class="btn-left">1 |</div> <div class="btn-right">Chrollo lucifer<span class="vid-duration"></span></div></button>
+                <button data-video="thor.mp4"  ><div class="btn-left">2 |</div> <div class="btn-right">Thorfin Edit<span></span></div></button>
+                <button data-video="gutsEdit.mp4"  ><div class="btn-left">3 |</div> <div class="btn-right"> Guts Edit<span></span></div></button>
+                <button data-video="monster.mp4" ><div class="btn-left">4 |</div> <div class="btn-right">Monster <span></span></div></button>
+                <button data-video="hunter.mp4"><div class="btn-left">5 |</div> <div class="btn-right">Hunter<span></span></div></button>
+                <button><div class="btn-left">6 |</div> <div class="btn-right">Unknown<span></span></div></button>
+                <button><div class="btn-left">7 |</div> <div class="btn-right">Unknown <span></span></div></button>
+                </div>
+            </div>
+            <div class="playList">
+                <button id="prevPlaylist">Previous</button>
+                <p id="playlist-title">SQL PlayList</p>
+                <button id="nextPlaylist">Next</button>
+            </div>
+        </div>
+       <div class="genral">
+            <div  class="video-place" id="varr" >
+                <video id="video" controls>
+                 <source src="nature.mp4"  type="video/mp4">
+                 Your browser does not support the video tag
+             </video>   
+           </div>
+           <div class="info">
+            <div class="pere">
+                <div class="date">
+                    <img src="calendar.png" alt="">
+                    <span id="date-video">2024-03-23</span>
+                </div>
+                <div class="time">
+                    <img src="clock.png" alt="">
+                    <span id="time-video"></span>
+                </div>
+            </div>
+                <div class="p-container">
+                    <div class="progress">
+                        <div class="cirle"><p id="porcentage">0%</p></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="c-b">
+        <div class="abroad"></div>
+   <div class="comment-container">
+    <div class="comment">
+        <div class="c-bar">
+            <div class="bar-container">
+                <img src="comment (1).png" alt="">
+                 <span>Commentaire</span>
+            </div>
+        </div>
+        <div class="comment-saisie">
+            <div class="left">
+               <div class="cc">
+                <div class="data">
+                        <p>PlayList:</p>
+                        <p >PL_Time:</p>
+                        <p>Type:</p>
+                </div>
+                <div class="answear">
+                    <p id="Titlle"></p>
+                    <p id="total_timing">10:03</p>
+                    <div class="input-pp">
+                       <div class="in1"> <input type="radio" name="ra-1" value="question"></input>
+                        <span>Question?</span></div>
+                        <div class="in2">
+                            <input type="radio" name="ra-1"></input>    
+                        <span>Information</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="right">
+                <textarea name="" id="txt" cols="30" rows="10" placeholder="Commentaire.."></textarea>
+                <button id="sub">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    <div class="comment-result-place" id="jjs">
+        <div class="info-goup">
+            <span id="c-n">No Comments Yet</span>
+            <div class="lastspan">
+                <!-- <span></span>
+                <span></span> -->
+            </div>
+        </div>
+                                                                              
+       <div class="line-container">
+        <div class="line-c"></div>
+       </div>
+            <!-- <div class="commenatire">
+                <div class="userinfo-place">
+                    <div class="user-info-comment-group">
+                        <div class="user-pic">
+                            <img src="profile.png" alt="">
+                        </div>
+                        <div class="span-column">
+                            <span>UserName</span>
+                        <span>1j</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="comment-contenu">
+                <label for="" id="comment">hello world</label>
+            </div>
+            </div> -->
+    </div> 
+   </div>
+</div>
+   </div> 
+   <script src="index.js"></script>
+</body>
+</html>
